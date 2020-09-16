@@ -1,0 +1,123 @@
+//useful feature #1: partials - splitting the css up into different files
+@import 'config';
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+
+body {
+    background:white;
+    margin: 0 auto;
+}
+
+.pizza {
+    display:flex;
+    margin-left: 65rem;
+    margin-bottom: -6rem;
+}
+
+// useful feature #3:
+// nesting; using a hierarchy for selectors within css like html
+// NAVBAR
+ul {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 2rem auto;
+    li a{
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        font-family: 'Pragati Narrow', sans-serif; 
+        font-size: 25px;
+        padding: 0 40px;
+            &:hover{
+                color: lighten($primaryColor, 1%); // lightening the variable primaryColor by 1% 
+                font-style:bold;
+                }
+        }
+}
+
+header {
+    display:flex;
+    justify-content: center;
+}
+
+
+.header_text {
+    justify-content: center;
+    text-align: left;
+    font-family: 'Pragati Narrow', sans-serif;
+    margin-bottom: 5rem;
+    padding-left:10rem;
+    margin-left:10rem;
+    min-width: 50rem;
+
+        .headline{
+            font-size: 70px;
+            font-weight: 200;
+            margin-top:2rem;
+            margin-bottom:1rem;
+        }
+        .headline2 {
+            font-size: $primaryFontSize;
+            font-weight: 200;
+            max-width: 35rem;
+            line-height: 110%;
+            padding-left: 10rem;
+        }
+        .headline3 {
+            font-weight: 200;
+            line-height: 110%;
+            padding-left: 10rem;
+            font-size: 11px;
+        }
+
+    }
+
+.middle{
+    background: $primaryColor; // using sass variable to define background color
+    display:flex;
+    justify-content: center;
+    font-family: 'Pragati Narrow', sans-serif;
+    margin: 0 auto;
+    min-width: 60rem;
+
+// useful feature #4:
+// mixins; group many css strings in one variable
+        .paragraph1 {
+            @include paragraphs; //Mixin 'paragraphs' added to paragraph1 element
+            padding: 5rem 2rem;
+            margin-right:2rem;
+        }
+        .paragraph2 {
+            font-size: $primaryFontSize; // using sass variable to define font size
+            font-weight: 200;
+            max-width: 33rem;
+            line-height: 110%;
+            padding-top: 10rem;
+            padding-bottom:5rem;
+            margin-left: 2rem;
+
+            }
+}
+
+.cheese {
+        display:flex;
+        margin-left: 5rem;
+        margin-top: -8rem;
+}
+
+//useful feature #5:
+// extend/inherit; extend css properties from one selector to another
+
+.uppskriftir_title{
+    @extend .header_text;
+    font-size: 50px;
+}

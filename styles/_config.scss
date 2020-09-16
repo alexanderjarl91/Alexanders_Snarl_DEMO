@@ -1,0 +1,15 @@
+
+//useful feature #1: partials - splitting the css up into different files
+
+// useful feature #2: variables; defining reusable variables in sass
+$primaryColor: #FFEBAA; // primary button color
+$primaryFontSize: 33px; //primary font size
+
+// Mixins
+@mixin paragraphs{
+    font-size: $primaryFontSize; // using sass variable to define font size
+    font-weight: 200;
+    max-width: 33rem;
+    line-height: 110%;
+
+}

@@ -1,0 +1,138 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: white;
+  margin: 0 auto;
+}
+
+.pizza {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 65rem;
+  margin-bottom: -6rem;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 2rem auto;
+}
+
+ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-family: 'Pragati Narrow', sans-serif;
+  font-size: 25px;
+  padding: 0 40px;
+}
+
+ul li a:hover {
+  color: #ffecaf;
+  font-style: bold;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header_text, .uppskriftir_title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  font-family: 'Pragati Narrow', sans-serif;
+  margin-bottom: 5rem;
+  padding-left: 10rem;
+  margin-left: 10rem;
+  min-width: 50rem;
+}
+
+.header_text .headline, .uppskriftir_title .headline {
+  font-size: 70px;
+  font-weight: 200;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header_text .headline2, .uppskriftir_title .headline2 {
+  font-size: 33px;
+  font-weight: 200;
+  max-width: 35rem;
+  line-height: 110%;
+  padding-left: 10rem;
+}
+
+.header_text .headline3, .uppskriftir_title .headline3 {
+  font-weight: 200;
+  line-height: 110%;
+  padding-left: 10rem;
+  font-size: 11px;
+}
+
+.middle {
+  background: #FFEBAA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Pragati Narrow', sans-serif;
+  margin: 0 auto;
+  min-width: 60rem;
+}
+
+.middle .paragraph1 {
+  font-size: 33px;
+  font-weight: 200;
+  max-width: 33rem;
+  line-height: 110%;
+  padding: 5rem 2rem;
+  margin-right: 2rem;
+}
+
+.middle .paragraph2 {
+  font-size: 33px;
+  font-weight: 200;
+  max-width: 33rem;
+  line-height: 110%;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  margin-left: 2rem;
+}
+
+.cheese {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5rem;
+  margin-top: -8rem;
+}
+
+.uppskriftir_title {
+  font-size: 50px;
+}
+/*# sourceMappingURL=styles.css.map */
